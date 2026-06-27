@@ -25,4 +25,13 @@ router.get ('/register', authCtrl.showRegister);
 router.post('/register', authCtrl.register);
 router.get ('/profile',  authCtrl.requireLogin, authCtrl.showProfile);
 
+// ── Health Check (CI/CD Demo) ───────────────────────────────
+router.get('/health', (req, res) => {
+    res.status(200).json({
+        status: 'OK',
+        message: 'SwagStore is running',
+        version: '1.1.0'
+    });
+    });
+
 module.exports = router;
