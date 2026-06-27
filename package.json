@@ -11,15 +11,26 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testMatch": ["**/tests/**/*.test.js"],
+    "testMatch": [
+      "**/tests/**/*.test.js"
+    ],
     "collectCoverageFrom": [
       "models/**/*.js",
       "controllers/**/*.js",
       "routes/**/*.js"
     ],
-    "coverageReporters": ["text", "lcov"]
+    "coverageReporters": [
+      "text",
+      "lcov"
+    ]
   },
-  "keywords": ["express", "handlebars", "mvc", "jest", "ecommerce"],
+  "keywords": [
+    "express",
+    "handlebars",
+    "mvc",
+    "jest",
+    "ecommerce"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
